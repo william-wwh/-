@@ -6,15 +6,15 @@ public class Text1 {
 		int a = 2 ;
 		int b = 5;
 		int c = 8;
-		System.out.println(a++);		//��1
+		System.out.println(a++);
 		System.out.println(a);
-		System.out.println(--b);		//��2
+		System.out.println(--b);
 		c -= a;
-		System.out.println(a+""+c);	//��3
-		if(a+b>=7 && c-b>a) {			//��4
-			System.out.println("��"); 	
+		System.out.println(a+""+c);
+		if(a+b>=7 && c-b>a) {
+			System.out.println("true"); 	
 		}else {
-			System.out.println("��");
+			System.out.println("false);
 		}
 
 	}
