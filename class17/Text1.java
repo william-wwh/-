@@ -19,10 +19,9 @@ public class Text1 {
 		
 		double a = Math.pow(n, 2);				//求n的平方
 		if (n > 0 && n < 100) {
-			double y = n/2+a/2;
-			if(y<1 && y>0)
-				y+=1;
-			System.out.println((int) y);
+			double y = n+a;
+			
+			System.out.println((int) y/2);
 		} else {
 			System.out.println("超出范围 输入的值应在0~100之间");
 		}
