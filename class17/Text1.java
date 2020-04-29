@@ -3,16 +3,24 @@ package class17;
 import java.util.Scanner;
 
 public class Text1 {
-
+	/*
+	 * 操场上有n排学生，第一排有1个学生，第二排有3个学生，第三排有6个学生，第四排有10个学生，......。按照这样的规律，n排总共有多少学生。
+	 * 输入
+	 * 输入一行，只有一个正整数。		数据范围：0<n<100。
+	 * 
+	 */
 	public static void main(String[] args) {
-		int x = 0;
+		int n = 0;
 		Scanner str = new Scanner(System.in);
 		System.out.println("输入的值应在0~100之间");
 		System.out.print("输入行数: ");
-		x = str.nextInt();
-		str.close();
-		if (x > 0 && x < 100) {
-			System.out.println(x * (x + 1) / 2);
+		n = str.nextInt();
+		str.close();							//输入结束
+		
+		int a = (int) Math.pow(n, 2);			//求n的平方
+		if (n > 0 && n < 100) {
+			int y= n/2+a/2;
+			System.out.println(y);
 		} else {
 			System.out.println("超出范围 输入的值应在0~100之间");
 		}
