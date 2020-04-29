@@ -10,19 +10,19 @@ public class Text1 {
 		System.out.println(a);
 		System.out.println(b);
 	}
-	
+
 	public static void hello() {
 		System.out.println("Hello world!");
 	}
-	
+
 	public static int he(int a, int b) {
-		return a+b;
+		return a + b;
 	}
-	
+
 	public static long jc(int n) {
 		long sum = 1;
 		for (int i = 1; i <= n; i++) {
-			sum *=i;
+			sum *= i;
 		}
 		return sum;
 	}
